@@ -1,0 +1,12 @@
+{
+    "name": "Flipkart Data Fetcher",
+    "description": "Fetches the data from flipkart and consoles it",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": ["https://*.flipkart.com/*"],
+            "js": ["content-script.js"]
+        }
+    ]    
+  }

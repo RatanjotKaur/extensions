@@ -1,0 +1,36 @@
+.big-text {
+  font-size: 140% !important;
+}
+.bold-text {
+  font-weight: 700 !important;
+}
+.high-contrast {
+  filter: contrast(180%);
+}
+.grayscale {
+  filter: grayscale(100%);
+}
+.invert {
+  filter: invert(100%);
+}
+.hide-images img {
+  display: none !important;
+}
+.highlight-links a {
+  background: yellow !important;
+  color: black !important;
+}
+.seizure-safe * {
+  animation: none !important;
+  transition: none !important;
+}
+
+/* Simple global magnifier (MVP): scales page for easier reading */
+.magnifier {
+  zoom: 1.25;
+}
+/* Lens magnifier styling */
+#mgl-lens {
+  border: 3px solid rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(2px);
+}

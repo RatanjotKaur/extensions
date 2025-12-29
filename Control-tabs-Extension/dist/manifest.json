@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Control Tabs",
+  "version": "1.0.0",
+  "description": "List all open tabs in popup with checkboxes and close selected tabs.",
+  "permissions": ["tabs"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Control Tabs",
+    "default_icon": "icons/icon-48.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "48": "icons/icon-48.png"
+  }
+}

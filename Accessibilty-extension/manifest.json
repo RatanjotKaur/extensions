@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Accessibility Toolkit",
+  "version": "1.0",
+  "description": "Accessibility tools for elderly & visually impaired users",
+  "action": {
+    "default_popup": "dist/popup.html"
+  },
+  "permissions": ["storage", "activeTab", "scripting", "tabs"],
+  "background": {
+    "service_worker": "dist/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["dist/content.js"],
+      "css": ["src/content/accessibility.css"]
+    }
+  ]
+}

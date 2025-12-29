@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Background -->
+  <rect width="128" height="128" fill="#34A853" rx="24"/>
+
+  <!-- Spreadsheet grid -->
+  <g fill="#FFFFFF">
+    <!-- Grid lines -->
+    <line x1="20" y1="45" x2="108" y2="45" stroke="#FFFFFF" stroke-width="2"/>
+    <line x1="20" y1="60" x2="108" y2="60" stroke="#FFFFFF" stroke-width="2"/>
+    <line x1="20" y1="75" x2="108" y2="75" stroke="#FFFFFF" stroke-width="2"/>
+    <line x1="20" y1="90" x2="108" y2="90" stroke="#FFFFFF" stroke-width="2"/>
+
+    <line x1="40" y1="30" x2="40" y2="105" stroke="#FFFFFF" stroke-width="2"/>
+    <line x1="60" y1="30" x2="60" y2="105" stroke="#FFFFFF" stroke-width="2"/>
+    <line x1="80" y1="30" x2="80" y2="105" stroke="#FFFFFF" stroke-width="2"/>
+
+    <!-- Header row -->
+    <rect x="20" y="30" width="88" height="15" fill="#4CAF50"/>
+  </g>
+
+  <!-- Plus sign (for adding/append) -->
+  <g fill="#FFFFFF">
+    <circle cx="64" cy="110" r="12" fill="#FF6F00"/>
+    <rect x="60" y="106" width="8" height="8" fill="#FFFFFF"/>
+    <rect x="62" y="104" width="4" height="12" fill="#FFFFFF"/>
+  </g>
+</svg>

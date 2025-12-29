@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "FB Member Request Logger",
+  "version": "1.0",
+  "description": "Capture Facebook Group Member Requests and save to Google Sheets",
+  "permissions": ["storage", "scripting", "activeTab", "identity"],
+  "host_permissions": [
+    "https://www.facebook.com/*",
+    "https://sheets.googleapis.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.facebook.com/groups/*/member-requests*",
+        "https://www.facebook.com/groups/*/members*",
+        "https://www.facebook.com/groups/*/member*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "oauth2": {
+    "client_id": "1040032985418-0nqhmscafs5outvi275avsg563vpun35.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/spreadsheets",
+      "https://www.googleapis.com/auth/userinfo.email"
+    ]
+  }
+}

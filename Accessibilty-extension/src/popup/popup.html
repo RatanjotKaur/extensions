@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./popup.css" />
+    <title>Accessibility Toolkit</title>
+  </head>
+  <body>
+    <div class="toolbar" role="toolbar" aria-label="Accessibility toolkit">
+      <button id="bigText" title="Text Size">
+        <span class="label">Text</span>
+        <span class="sub">Size</span>
+      </button>
+
+      <button id="contrast" title="Contrast">
+        <span class="label">Contrast</span>
+        <span class="sub">Toggle</span>
+      </button>
+
+      <button id="grayscale" title="Colors">
+        <span class="label">Colors</span>
+        <span class="sub">Grayscale</span>
+      </button>
+
+      <button id="hideImages" title="Images">
+        <span class="label">Images</span>
+        <span class="sub">Hide/Show</span>
+      </button>
+
+      <button id="zoom" title="Zoom">
+        <span class="label">Zoom</span>
+        <span class="sub">Magnify</span>
+      </button>
+
+      <button id="reset" class="danger" title="Reset">
+        <span class="label">Reset</span>
+        <span class="sub">Defaults</span>
+      </button>
+
+      <div style="padding: 8px 8px 0 8px">
+        <label
+          style="
+            display: block;
+            font-size: 12px;
+            color: #333;
+            margin-bottom: 4px;
+          "
+          >Speech</label
+        >
+        <select id="ttsVoice" style="width: 100%; margin-bottom: 6px"></select>
+        <input
+          id="ttsRate"
+          type="range"
+          min="0.5"
+          max="2"
+          step="0.1"
+          value="1"
+          style="width: 100%"
+        />
+      </div>
+    </div>
+
+    <script type="module" src="./popup.js"></script>
+  </body>
+</html>
